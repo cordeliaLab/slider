@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul li{list-style: none;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<!-- wing js -->
+	<!--<script type="text/javascript" src="js/wing.js"></script>-->
+	<script type="text/javascript" src="js/wing.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function($){
+			$('#slide1 .wing').Wing({ // 띄워쓰면 아래 태그 중 하나, 붙여쓰면 나 자신
+				autoPlay:true
+				, selectorStr:'#slide1 .wing' // jquery version 3 이상일 때 
+				, moveType : 'MOS'
+				, autoPlayTime : 3000
+				, prevBtnClass : 'left_btn'
+				, nextBtnClass : 'right_btn'
+				, mosParams : {
+					viewBoxOverFlowHidden:true,
+					viewBoxWidth:950,
+					viewBoxHeight:397,
+					viewBoxLastIndexChange:true
+				}
+				, btnViewClass:'bt_view'
+				, motionScript : function(option){
+
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="slide1">
+		<div class="wing" style="">
+			<ul class="img_view">
+				<li><img style='width:218px; height:218px;' src="img/target_img/311-jlsyJMNPQW.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/366-05hlsyCDPR.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/624-0014dijoMS.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/731-0124rDQUVX.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1283-03bghlqNOT.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1532-0fhilxFGHL.png" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1708-012gqsyAGJ.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1720-0136kqDIJO.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1790-00cdvFIPUV.jpg" alt=""></li>
+				<li><img style='width:218px; height:218px;' src="img/target_img/1843-0gjnuyPTWX.jpg" alt=""></li>
+			</ul>
+			<ul class="bt_view">
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/311-jlsyJMNPQW.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/366-05hlsyCDPR.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/624-0014dijoMS.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/731-0124rDQUVX.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1283-03bghlqNOT.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1532-0fhilxFGHL.png" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1708-012gqsyAGJ.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1720-0136kqDIJO.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1790-00cdvFIPUV.jpg" alt=""></li>
+				<li><img style='float:left; width:100px; height:100px;' src="img/target_img/1843-0gjnuyPTWX.jpg" alt=""></li>
+			</ul>
+			<span class="left_btn"><img src="img/left_arrow.jpg" alt="arr"></span>
+			<span class="right_btn"><img src="img/right_arrow.jpg" alt="arr"></span>
+		</div>
+	</div>
+</body>
+</html>
